@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blocks Project</title>
+		<link rel="stylesheet" href="projectstyle.css">
+		<script src="projectscript.js"></script>
+	</head>
+	<body>
+		<h1>Blocks</h1>
+		<h4>A Mood Tracker App</h4>
+		
+		<div>Export Grid <button id="exportfile" onclick="exportFile()">Export</button></div><br>
+		<div id = "input">Import Grid <input type="file", name="inputfile", id="inputfile"></div>
+		
+		<hr>
+		<div class="megaDiv">
+			<div class="gridMonths">Jan</div>
+			<div class="gridMonths">Feb</div>
+			<div class="gridMonths">Mar</div>
+			<div class="gridMonths">Apr</div>
+			<div class="gridMonths">May</div>
+			<div class="gridMonths">Jun</div>
+			<div class="gridMonths">Jul</div>
+			<div class="gridMonths">Aug</div>
+			<div class="gridMonths">Sep</div>
+			<div class="gridMonths">Oct</div>
+			<div class="gridMonths">Nov</div>
+			<div class="gridMonths">Dec</div>
+		</div>
+		<br>
+		<div class="megaDiv">
+			<div class="mainGrid">
+				<div class="gridDay" id="1/1" onclick="openModal('1/1')">1</div>
+				<div class="gridDay" id="1/2" onclick="openModal('1/2')">2</div>
+				<div class="gridDay" id="1/3" onclick="openModal('1/3')">3</div>
+				<div class="gridDay" id="1/4" onclick="openModal('1/4')">4</div>
+				<div class="gridDay" id="1/5" onclick="openModal('1/5')">5</div>
+				<div class="gridDay" id="1/6" onclick="openModal('1/6')">6</div>
+				<div class="gridDay" id="1/7" onclick="openModal('1/7')">7</div>
+				<div class="gridDay" id="1/8" onclick="openModal('1/8')">8</div>
+				<div class="gridDay" id="1/9" onclick="openModal('1/9')">9</div>
+				<div class="gridDay" id="1/10" onclick="openModal('1/10')">10</div>
+				<div class="gridDay" id="1/11" onclick="openModal('1/11')">11</div>
+				<div class="gridDay" id="1/12" onclick="openModal('1/12')">12</div>
+				<div class="gridDay" id="1/13" onclick="openModal('1/13')">13</div>
+				<div class="gridDay" id="1/14" onclick="openModal('1/14')">14</div>
+				<div class="gridDay" id="1/15" onclick="openModal('1/15')">15</div>
+				<div class="gridDay" id="1/16" onclick="openModal('1/16')">16</div>
+				<div class="gridDay" id="1/17" onclick="openModal('1/17')">17</div>
+				<div class="gridDay" id="1/18" onclick="openModal('1/18')">18</div>
+				<div class="gridDay" id="1/19" onclick="openModal('1/19')">19</div>
+				<div class="gridDay" id="1/20" onclick="openModal('1/20')">20</div>
+				<div class="gridDay" id="1/21" onclick="openModal('1/21')">21</div>
+				<div class="gridDay" id="1/22" onclick="openModal('1/22')">22</div>
+				<div class="gridDay" id="1/23" onclick="openModal('1/23')">23</div>
+				<div class="gridDay" id="1/24" onclick="openModal('1/24')">24</div>
+				<div class="gridDay" id="1/25" onclick="openModal('1/25')">25</div>
+				<div class="gridDay" id="1/26" onclick="openModal('1/26')">26</div>
+				<div class="gridDay" id="1/27" onclick="openModal('1/27')">27</div>
+				<div class="gridDay" id="1/28" onclick="openModal('1/28')">28</div>
+				<div class="gridDay" id="1/29" onclick="openModal('1/29')">29</div>
+				<div class="gridDay" id="1/30" onclick="openModal('1/30')">30</div>
+				<div class="gridDay" id="1/31" onclick="openModal('1/31')">31</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="2/1" onclick="openModal('2/1')">1</div>
+				<div class="gridDay" id="2/2" onclick="openModal('2/2')">2</div>
+				<div class="gridDay" id="2/3" onclick="openModal('2/3')">3</div>
+				<div class="gridDay" id="2/4" onclick="openModal('2/4')">4</div>
+				<div class="gridDay" id="2/5" onclick="openModal('2/5')">5</div>
+				<div class="gridDay" id="2/6" onclick="openModal('2/6')">6</div>
+				<div class="gridDay" id="2/7" onclick="openModal('2/7')">7</div>
+				<div class="gridDay" id="2/8" onclick="openModal('2/8')">8</div>
+				<div class="gridDay" id="2/9" onclick="openModal('2/9')">9</div>
+				<div class="gridDay" id="2/10" onclick="openModal('2/10')">10</div>
+				<div class="gridDay" id="2/11" onclick="openModal('2/11')">11</div>
+				<div class="gridDay" id="2/12" onclick="openModal('2/12')">12</div>
+				<div class="gridDay" id="2/13" onclick="openModal('2/13')">13</div>
+				<div class="gridDay" id="2/14" onclick="openModal('2/14')">14</div>
+				<div class="gridDay" id="2/15" onclick="openModal('2/15')">15</div>
+				<div class="gridDay" id="2/16" onclick="openModal('2/16')">16</div>
+				<div class="gridDay" id="2/17" onclick="openModal('2/17')">17</div>
+				<div class="gridDay" id="2/18" onclick="openModal('2/18')">18</div>
+				<div class="gridDay" id="2/19" onclick="openModal('2/19')">19</div>
+				<div class="gridDay" id="2/20" onclick="openModal('2/20')">20</div>
+				<div class="gridDay" id="2/21" onclick="openModal('2/21')">21</div>
+				<div class="gridDay" id="2/22" onclick="openModal('2/22')">22</div>
+				<div class="gridDay" id="2/23" onclick="openModal('2/23')">23</div>
+				<div class="gridDay" id="2/24" onclick="openModal('2/24')">24</div>
+				<div class="gridDay" id="2/25" onclick="openModal('2/25')">25</div>
+				<div class="gridDay" id="2/26" onclick="openModal('2/26')">26</div>
+				<div class="gridDay" id="2/27" onclick="openModal('2/27')">27</div>
+				<div class="gridDay" id="2/28" onclick="openModal('2/28')">28</div>
+				<div class="gridDay" id="2/29" onclick="openModal('2/29')">29</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="3/1" onclick="openModal('3/1')">1</div>
+				<div class="gridDay" id="3/2" onclick="openModal('3/2')">2</div>
+				<div class="gridDay" id="3/3" onclick="openModal('3/3')">3</div>
+				<div class="gridDay" id="3/4" onclick="openModal('3/4')">4</div>
+				<div class="gridDay" id="3/5" onclick="openModal('3/5')">5</div>
+				<div class="gridDay" id="3/6" onclick="openModal('3/6')">6</div>
+				<div class="gridDay" id="3/7" onclick="openModal('3/7')">7</div>
+				<div class="gridDay" id="3/8" onclick="openModal('3/8')">8</div>
+				<div class="gridDay" id="3/9" onclick="openModal('3/9')">9</div>
+				<div class="gridDay" id="3/10" onclick="openModal('3/10')">10</div>
+				<div class="gridDay" id="3/11" onclick="openModal('3/11')">11</div>
+				<div class="gridDay" id="3/12" onclick="openModal('3/12')">12</div>
+				<div class="gridDay" id="3/13" onclick="openModal('3/13')">13</div>
+				<div class="gridDay" id="3/14" onclick="openModal('3/14')">14</div>
+				<div class="gridDay" id="3/15" onclick="openModal('3/15')">15</div>
+				<div class="gridDay" id="3/16" onclick="openModal('3/16')">16</div>
+				<div class="gridDay" id="3/17" onclick="openModal('3/17')">17</div>
+				<div class="gridDay" id="3/18" onclick="openModal('3/18')">18</div>
+				<div class="gridDay" id="3/19" onclick="openModal('3/19')">19</div>
+				<div class="gridDay" id="3/20" onclick="openModal('3/20')">20</div>
+				<div class="gridDay" id="3/21" onclick="openModal('3/21')">21</div>
+				<div class="gridDay" id="3/22" onclick="openModal('3/22')">22</div>
+				<div class="gridDay" id="3/23" onclick="openModal('3/23')">23</div>
+				<div class="gridDay" id="3/24" onclick="openModal('3/24')">24</div>
+				<div class="gridDay" id="3/25" onclick="openModal('3/25')">25</div>
+				<div class="gridDay" id="3/26" onclick="openModal('3/26')">26</div>
+				<div class="gridDay" id="3/27" onclick="openModal('3/27')">27</div>
+				<div class="gridDay" id="3/28" onclick="openModal('3/28')">28</div>
+				<div class="gridDay" id="3/29" onclick="openModal('3/29')">29</div>
+				<div class="gridDay" id="3/30" onclick="openModal('3/30')">30</div>
+				<div class="gridDay" id="3/31" onclick="openModal('3/31')">31</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="4/1" onclick="openModal('4/1')">1</div>
+				<div class="gridDay" id="4/2" onclick="openModal('4/2')">2</div>
+				<div class="gridDay" id="4/3" onclick="openModal('4/3')">3</div>
+				<div class="gridDay" id="4/4" onclick="openModal('4/4')">4</div>
+				<div class="gridDay" id="4/5" onclick="openModal('4/5')">5</div>
+				<div class="gridDay" id="4/6" onclick="openModal('4/6')">6</div>
+				<div class="gridDay" id="4/7" onclick="openModal('4/7')">7</div>
+				<div class="gridDay" id="4/8" onclick="openModal('4/8')">8</div>
+				<div class="gridDay" id="4/9" onclick="openModal('4/9')">9</div>
+				<div class="gridDay" id="4/10" onclick="openModal('4/10')">10</div>
+				<div class="gridDay" id="4/11" onclick="openModal('4/11')">11</div>
+				<div class="gridDay" id="4/12" onclick="openModal('4/12')">12</div>
+				<div class="gridDay" id="4/13" onclick="openModal('4/13')">13</div>
+				<div class="gridDay" id="4/14" onclick="openModal('4/14')">14</div>
+				<div class="gridDay" id="4/15" onclick="openModal('4/15')">15</div>
+				<div class="gridDay" id="4/16" onclick="openModal('4/16')">16</div>
+				<div class="gridDay" id="4/17" onclick="openModal('4/17')">17</div>
+				<div class="gridDay" id="4/18" onclick="openModal('4/18')">18</div>
+				<div class="gridDay" id="4/19" onclick="openModal('4/19')">19</div>
+				<div class="gridDay" id="4/20" onclick="openModal('4/20')">20</div>
+				<div class="gridDay" id="4/21" onclick="openModal('4/21')">21</div>
+				<div class="gridDay" id="4/22" onclick="openModal('4/22')">22</div>
+				<div class="gridDay" id="4/23" onclick="openModal('4/23')">23</div>
+				<div class="gridDay" id="4/24" onclick="openModal('4/24')">24</div>
+				<div class="gridDay" id="4/25" onclick="openModal('4/25')">25</div>
+				<div class="gridDay" id="4/26" onclick="openModal('4/26')">26</div>
+				<div class="gridDay" id="4/27" onclick="openModal('4/27')">27</div>
+				<div class="gridDay" id="4/28" onclick="openModal('4/28')">28</div>
+				<div class="gridDay" id="4/29" onclick="openModal('4/29')">29</div>
+				<div class="gridDay" id="4/30" onclick="openModal('4/30')">30</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="5/1" onclick="openModal('5/1')">1</div>
+				<div class="gridDay" id="5/2" onclick="openModal('5/2')">2</div>
+				<div class="gridDay" id="5/3" onclick="openModal('5/3')">3</div>
+				<div class="gridDay" id="5/4" onclick="openModal('5/4')">4</div>
+				<div class="gridDay" id="5/5" onclick="openModal('5/5')">5</div>
+				<div class="gridDay" id="5/6" onclick="openModal('5/6')">6</div>
+				<div class="gridDay" id="5/7" onclick="openModal('5/7')">7</div>
+				<div class="gridDay" id="5/8" onclick="openModal('5/8')">8</div>
+				<div class="gridDay" id="5/9" onclick="openModal('5/9')">9</div>
+				<div class="gridDay" id="5/10" onclick="openModal('5/10')">10</div>
+				<div class="gridDay" id="5/11" onclick="openModal('5/11')">11</div>
+				<div class="gridDay" id="5/12" onclick="openModal('5/12')">12</div>
+				<div class="gridDay" id="5/13" onclick="openModal('5/13')">13</div>
+				<div class="gridDay" id="5/14" onclick="openModal('5/14')">14</div>
+				<div class="gridDay" id="5/15" onclick="openModal('5/15')">15</div>
+				<div class="gridDay" id="5/16" onclick="openModal('5/16')">16</div>
+				<div class="gridDay" id="5/17" onclick="openModal('5/17')">17</div>
+				<div class="gridDay" id="5/18" onclick="openModal('5/18')">18</div>
+				<div class="gridDay" id="5/19" onclick="openModal('5/19')">19</div>
+				<div class="gridDay" id="5/20" onclick="openModal('5/20')">20</div>
+				<div class="gridDay" id="5/21" onclick="openModal('5/21')">21</div>
+				<div class="gridDay" id="5/22" onclick="openModal('5/22')">22</div>
+				<div class="gridDay" id="5/23" onclick="openModal('5/23')">23</div>
+				<div class="gridDay" id="5/24" onclick="openModal('5/24')">24</div>
+				<div class="gridDay" id="5/25" onclick="openModal('5/25')">25</div>
+				<div class="gridDay" id="5/26" onclick="openModal('5/26')">26</div>
+				<div class="gridDay" id="5/27" onclick="openModal('5/27')">27</div>
+				<div class="gridDay" id="5/28" onclick="openModal('5/28')">28</div>
+				<div class="gridDay" id="5/29" onclick="openModal('5/29')">29</div>
+				<div class="gridDay" id="5/30" onclick="openModal('5/30')">30</div>
+				<div class="gridDay" id="5/31" onclick="openModal('5/31')">31</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="6/1" onclick="openModal('6/1')">1</div>
+				<div class="gridDay" id="6/2" onclick="openModal('6/2')">2</div>
+				<div class="gridDay" id="6/3" onclick="openModal('6/3')">3</div>
+				<div class="gridDay" id="6/4" onclick="openModal('6/4')">4</div>
+				<div class="gridDay" id="6/5" onclick="openModal('6/5')">5</div>
+				<div class="gridDay" id="6/6" onclick="openModal('6/6')">6</div>
+				<div class="gridDay" id="6/7" onclick="openModal('6/7')">7</div>
+				<div class="gridDay" id="6/8" onclick="openModal('6/8')">8</div>
+				<div class="gridDay" id="6/9" onclick="openModal('6/9')">9</div>
+				<div class="gridDay" id="6/10" onclick="openModal('6/10')">10</div>
+				<div class="gridDay" id="6/11" onclick="openModal('6/11')">11</div>
+				<div class="gridDay" id="6/12" onclick="openModal('6/12')">12</div>
+				<div class="gridDay" id="6/13" onclick="openModal('6/13')">13</div>
+				<div class="gridDay" id="6/14" onclick="openModal('6/14')">14</div>
+				<div class="gridDay" id="6/15" onclick="openModal('6/15')">15</div>
+				<div class="gridDay" id="6/16" onclick="openModal('6/16')">16</div>
+				<div class="gridDay" id="6/17" onclick="openModal('6/17')">17</div>
+				<div class="gridDay" id="6/18" onclick="openModal('6/18')">18</div>
+				<div class="gridDay" id="6/19" onclick="openModal('6/19')">19</div>
+				<div class="gridDay" id="6/20" onclick="openModal('6/20')">20</div>
+				<div class="gridDay" id="6/21" onclick="openModal('6/21')">21</div>
+				<div class="gridDay" id="6/22" onclick="openModal('6/22')">22</div>
+				<div class="gridDay" id="6/23" onclick="openModal('6/23')">23</div>
+				<div class="gridDay" id="6/24" onclick="openModal('6/24')">24</div>
+				<div class="gridDay" id="6/25" onclick="openModal('6/25')">25</div>
+				<div class="gridDay" id="6/26" onclick="openModal('6/26')">26</div>
+				<div class="gridDay" id="6/27" onclick="openModal('6/27')">27</div>
+				<div class="gridDay" id="6/28" onclick="openModal('6/28')">28</div>
+				<div class="gridDay" id="6/29" onclick="openModal('6/29')">29</div>
+				<div class="gridDay" id="6/30" onclick="openModal('6/30')">30</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="7/1" onclick="openModal('7/1')">1</div>
+				<div class="gridDay" id="7/2" onclick="openModal('7/2')">2</div>
+				<div class="gridDay" id="7/3" onclick="openModal('7/3')">3</div>
+				<div class="gridDay" id="7/4" onclick="openModal('7/4')">4</div>
+				<div class="gridDay" id="7/5" onclick="openModal('7/5')">5</div>
+				<div class="gridDay" id="7/6" onclick="openModal('7/6')">6</div>
+				<div class="gridDay" id="7/7" onclick="openModal('7/7')">7</div>
+				<div class="gridDay" id="7/8" onclick="openModal('7/8')">8</div>
+				<div class="gridDay" id="7/9" onclick="openModal('7/9')">9</div>
+				<div class="gridDay" id="7/10" onclick="openModal('7/10')">10</div>
+				<div class="gridDay" id="7/11" onclick="openModal('7/11')">11</div>
+				<div class="gridDay" id="7/12" onclick="openModal('7/12')">12</div>
+				<div class="gridDay" id="7/13" onclick="openModal('7/13')">13</div>
+				<div class="gridDay" id="7/14" onclick="openModal('7/14')">14</div>
+				<div class="gridDay" id="7/15" onclick="openModal('7/15')">15</div>
+				<div class="gridDay" id="7/16" onclick="openModal('7/16')">16</div>
+				<div class="gridDay" id="7/17" onclick="openModal('7/17')">17</div>
+				<div class="gridDay" id="7/18" onclick="openModal('7/18')">18</div>
+				<div class="gridDay" id="7/19" onclick="openModal('7/19')">19</div>
+				<div class="gridDay" id="7/20" onclick="openModal('7/20')">20</div>
+				<div class="gridDay" id="7/21" onclick="openModal('7/21')">21</div>
+				<div class="gridDay" id="7/22" onclick="openModal('7/22')">22</div>
+				<div class="gridDay" id="7/23" onclick="openModal('7/23')">23</div>
+				<div class="gridDay" id="7/24" onclick="openModal('7/24')">24</div>
+				<div class="gridDay" id="7/25" onclick="openModal('7/25')">25</div>
+				<div class="gridDay" id="7/26" onclick="openModal('7/26')">26</div>
+				<div class="gridDay" id="7/27" onclick="openModal('7/27')">27</div>
+				<div class="gridDay" id="7/28" onclick="openModal('7/28')">28</div>
+				<div class="gridDay" id="7/29" onclick="openModal('7/29')">29</div>
+				<div class="gridDay" id="7/30" onclick="openModal('7/30')">30</div>
+				<div class="gridDay" id="7/31" onclick="openModal('7/31')">31</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="8/1" onclick="openModal('8/1')">1</div>
+				<div class="gridDay" id="8/2" onclick="openModal('8/2')">2</div>
+				<div class="gridDay" id="8/3" onclick="openModal('8/3')">3</div>
+				<div class="gridDay" id="8/4" onclick="openModal('8/4')">4</div>
+				<div class="gridDay" id="8/5" onclick="openModal('8/5')">5</div>
+				<div class="gridDay" id="8/6" onclick="openModal('8/6')">6</div>
+				<div class="gridDay" id="8/7" onclick="openModal('8/7')">7</div>
+				<div class="gridDay" id="8/8" onclick="openModal('8/8')">8</div>
+				<div class="gridDay" id="8/9" onclick="openModal('8/9')">9</div>
+				<div class="gridDay" id="8/10" onclick="openModal('8/10')">10</div>
+				<div class="gridDay" id="8/11" onclick="openModal('8/11')">11</div>
+				<div class="gridDay" id="8/12" onclick="openModal('8/12')">12</div>
+				<div class="gridDay" id="8/13" onclick="openModal('8/13')">13</div>
+				<div class="gridDay" id="8/14" onclick="openModal('8/14')">14</div>
+				<div class="gridDay" id="8/15" onclick="openModal('8/15')">15</div>
+				<div class="gridDay" id="8/16" onclick="openModal('8/16')">16</div>
+				<div class="gridDay" id="8/17" onclick="openModal('8/17')">17</div>
+				<div class="gridDay" id="8/18" onclick="openModal('8/18')">18</div>
+				<div class="gridDay" id="8/19" onclick="openModal('8/19')">19</div>
+				<div class="gridDay" id="8/20" onclick="openModal('8/20')">20</div>
+				<div class="gridDay" id="8/21" onclick="openModal('8/21')">21</div>
+				<div class="gridDay" id="8/22" onclick="openModal('8/22')">22</div>
+				<div class="gridDay" id="8/23" onclick="openModal('8/23')">23</div>
+				<div class="gridDay" id="8/24" onclick="openModal('8/24')">24</div>
+				<div class="gridDay" id="8/25" onclick="openModal('8/25')">25</div>
+				<div class="gridDay" id="8/26" onclick="openModal('8/26')">26</div>
+				<div class="gridDay" id="8/27" onclick="openModal('8/27')">27</div>
+				<div class="gridDay" id="8/28" onclick="openModal('8/28')">28</div>
+				<div class="gridDay" id="8/29" onclick="openModal('8/29')">29</div>
+				<div class="gridDay" id="8/30" onclick="openModal('8/30')">30</div>
+				<div class="gridDay" id="8/31" onclick="openModal('8/31')">31</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="9/1" onclick="openModal('9/1')">1</div>
+				<div class="gridDay" id="9/2" onclick="openModal('9/2')">2</div>
+				<div class="gridDay" id="9/3" onclick="openModal('9/3')">3</div>
+				<div class="gridDay" id="9/4" onclick="openModal('9/4')">4</div>
+				<div class="gridDay" id="9/5" onclick="openModal('9/5')">5</div>
+				<div class="gridDay" id="9/6" onclick="openModal('9/6')">6</div>
+				<div class="gridDay" id="9/7" onclick="openModal('9/7')">7</div>
+				<div class="gridDay" id="9/8" onclick="openModal('9/8')">8</div>
+				<div class="gridDay" id="9/9" onclick="openModal('9/9')">9</div>
+				<div class="gridDay" id="9/10" onclick="openModal('9/10')">10</div>
+				<div class="gridDay" id="9/11" onclick="openModal('9/11')">11</div>
+				<div class="gridDay" id="9/12" onclick="openModal('9/12')">12</div>
+				<div class="gridDay" id="9/13" onclick="openModal('9/13')">13</div>
+				<div class="gridDay" id="9/14" onclick="openModal('9/14')">14</div>
+				<div class="gridDay" id="9/15" onclick="openModal('9/15')">15</div>
+				<div class="gridDay" id="9/16" onclick="openModal('9/16')">16</div>
+				<div class="gridDay" id="9/17" onclick="openModal('9/17')">17</div>
+				<div class="gridDay" id="9/18" onclick="openModal('9/18')">18</div>
+				<div class="gridDay" id="9/19" onclick="openModal('9/19')">19</div>
+				<div class="gridDay" id="9/20" onclick="openModal('9/20')">20</div>
+				<div class="gridDay" id="9/21" onclick="openModal('9/21')">21</div>
+				<div class="gridDay" id="9/22" onclick="openModal('9/22')">22</div>
+				<div class="gridDay" id="9/23" onclick="openModal('9/23')">23</div>
+				<div class="gridDay" id="9/24" onclick="openModal('9/24')">24</div>
+				<div class="gridDay" id="9/25" onclick="openModal('9/25')">25</div>
+				<div class="gridDay" id="9/26" onclick="openModal('9/26')">26</div>
+				<div class="gridDay" id="9/27" onclick="openModal('9/27')">27</div>
+				<div class="gridDay" id="9/28" onclick="openModal('9/28')">28</div>
+				<div class="gridDay" id="9/29" onclick="openModal('9/29')">29</div>
+				<div class="gridDay" id="9/30" onclick="openModal('9/30')">30</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="10/1" onclick="openModal('10/1')">1</div>
+				<div class="gridDay" id="10/2" onclick="openModal('10/2')">2</div>
+				<div class="gridDay" id="10/3" onclick="openModal('10/3')">3</div>
+				<div class="gridDay" id="10/4" onclick="openModal('10/4')">4</div>
+				<div class="gridDay" id="10/5" onclick="openModal('10/5')">5</div>
+				<div class="gridDay" id="10/6" onclick="openModal('10/6')">6</div>
+				<div class="gridDay" id="10/7" onclick="openModal('10/7')">7</div>
+				<div class="gridDay" id="10/8" onclick="openModal('10/8')">8</div>
+				<div class="gridDay" id="10/9" onclick="openModal('10/9')">9</div>
+				<div class="gridDay" id="10/10" onclick="openModal('10/10')">10</div>
+				<div class="gridDay" id="10/11" onclick="openModal('10/11')">11</div>
+				<div class="gridDay" id="10/12" onclick="openModal('10/12')">12</div>
+				<div class="gridDay" id="10/13" onclick="openModal('10/13')">13</div>
+				<div class="gridDay" id="10/14" onclick="openModal('10/14')">14</div>
+				<div class="gridDay" id="10/15" onclick="openModal('10/15')">15</div>
+				<div class="gridDay" id="10/16" onclick="openModal('10/16')">16</div>
+				<div class="gridDay" id="10/17" onclick="openModal('10/17')">17</div>
+				<div class="gridDay" id="10/18" onclick="openModal('10/18')">18</div>
+				<div class="gridDay" id="10/19" onclick="openModal('10/19')">19</div>
+				<div class="gridDay" id="10/20" onclick="openModal('10/20')">20</div>
+				<div class="gridDay" id="10/21" onclick="openModal('10/21')">21</div>
+				<div class="gridDay" id="10/22" onclick="openModal('10/22')">22</div>
+				<div class="gridDay" id="10/23" onclick="openModal('10/23')">23</div>
+				<div class="gridDay" id="10/24" onclick="openModal('10/24')">24</div>
+				<div class="gridDay" id="10/25" onclick="openModal('10/25')">25</div>
+				<div class="gridDay" id="10/26" onclick="openModal('10/26')">26</div>
+				<div class="gridDay" id="10/27" onclick="openModal('10/27')">27</div>
+				<div class="gridDay" id="10/28" onclick="openModal('10/28')">28</div>
+				<div class="gridDay" id="10/29" onclick="openModal('10/29')">29</div>
+				<div class="gridDay" id="10/30" onclick="openModal('10/30')">30</div>
+				<div class="gridDay" id="10/31" onclick="openModal('10/31')">31</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="11/1" onclick="openModal('11/1')">1</div>
+				<div class="gridDay" id="11/2" onclick="openModal('11/2')">2</div>
+				<div class="gridDay" id="11/3" onclick="openModal('11/3')">3</div>
+				<div class="gridDay" id="11/4" onclick="openModal('11/4')">4</div>
+				<div class="gridDay" id="11/5" onclick="openModal('11/5')">5</div>
+				<div class="gridDay" id="11/6" onclick="openModal('11/6')">6</div>
+				<div class="gridDay" id="11/7" onclick="openModal('11/7')">7</div>
+				<div class="gridDay" id="11/8" onclick="openModal('11/8')">8</div>
+				<div class="gridDay" id="11/9" onclick="openModal('11/9')">9</div>
+				<div class="gridDay" id="11/10" onclick="openModal('11/10')">10</div>
+				<div class="gridDay" id="11/11" onclick="openModal('11/11')">11</div>
+				<div class="gridDay" id="11/12" onclick="openModal('11/12')">12</div>
+				<div class="gridDay" id="11/13" onclick="openModal('11/13')">13</div>
+				<div class="gridDay" id="11/14" onclick="openModal('11/14')">14</div>
+				<div class="gridDay" id="11/15" onclick="openModal('11/15')">15</div>
+				<div class="gridDay" id="11/16" onclick="openModal('11/16')">16</div>
+				<div class="gridDay" id="11/17" onclick="openModal('11/17')">17</div>
+				<div class="gridDay" id="11/18" onclick="openModal('11/18')">18</div>
+				<div class="gridDay" id="11/19" onclick="openModal('11/19')">19</div>
+				<div class="gridDay" id="11/20" onclick="openModal('11/20')">20</div>
+				<div class="gridDay" id="11/21" onclick="openModal('11/21')">21</div>
+				<div class="gridDay" id="11/22" onclick="openModal('11/22')">22</div>
+				<div class="gridDay" id="11/23" onclick="openModal('11/23')">23</div>
+				<div class="gridDay" id="11/24" onclick="openModal('11/24')">24</div>
+				<div class="gridDay" id="11/25" onclick="openModal('11/25')">25</div>
+				<div class="gridDay" id="11/26" onclick="openModal('11/26')">26</div>
+				<div class="gridDay" id="11/27" onclick="openModal('11/27')">27</div>
+				<div class="gridDay" id="11/28" onclick="openModal('11/28')">28</div>
+				<div class="gridDay" id="11/29" onclick="openModal('11/29')">29</div>
+				<div class="gridDay" id="11/30" onclick="openModal('11/30')">30</div>
+			</div>
+			<div class="mainGrid">
+				<div class="gridDay" id="12/1" onclick="openModal('12/1')">1</div>
+				<div class="gridDay" id="12/2" onclick="openModal('12/2')">2</div>
+				<div class="gridDay" id="12/3" onclick="openModal('12/3')">3</div>
+				<div class="gridDay" id="12/4" onclick="openModal('12/4')">4</div>
+				<div class="gridDay" id="12/5" onclick="openModal('12/5')">5</div>
+				<div class="gridDay" id="12/6" onclick="openModal('12/6')">6</div>
+				<div class="gridDay" id="12/7" onclick="openModal('12/7')">7</div>
+				<div class="gridDay" id="12/8" onclick="openModal('12/8')">8</div>
+				<div class="gridDay" id="12/9" onclick="openModal('12/9')">9</div>
+				<div class="gridDay" id="12/10" onclick="openModal('12/10')">10</div>
+				<div class="gridDay" id="12/11" onclick="openModal('12/11')">11</div>
+				<div class="gridDay" id="12/12" onclick="openModal('12/12')">12</div>
+				<div class="gridDay" id="12/13" onclick="openModal('12/13')">13</div>
+				<div class="gridDay" id="12/14" onclick="openModal('12/14')">14</div>
+				<div class="gridDay" id="12/15" onclick="openModal('12/15')">15</div>
+				<div class="gridDay" id="12/16" onclick="openModal('12/16')">16</div>
+				<div class="gridDay" id="12/17" onclick="openModal('12/17')">17</div>
+				<div class="gridDay" id="12/18" onclick="openModal('12/18')">18</div>
+				<div class="gridDay" id="12/19" onclick="openModal('12/19')">19</div>
+				<div class="gridDay" id="12/20" onclick="openModal('12/20')">20</div>
+				<div class="gridDay" id="12/21" onclick="openModal('12/21')">21</div>
+				<div class="gridDay" id="12/22" onclick="openModal('12/22')">22</div>
+				<div class="gridDay" id="12/23" onclick="openModal('12/23')">23</div>
+				<div class="gridDay" id="12/24" onclick="openModal('12/24')">24</div>
+				<div class="gridDay" id="12/25" onclick="openModal('12/25')">25</div>
+				<div class="gridDay" id="12/26" onclick="openModal('12/26')">26</div>
+				<div class="gridDay" id="12/27" onclick="openModal('12/27')">27</div>
+				<div class="gridDay" id="12/28" onclick="openModal('12/28')">28</div>
+				<div class="gridDay" id="12/29" onclick="openModal('12/29')">29</div>
+				<div class="gridDay" id="12/30" onclick="openModal('12/30')">30</div>
+				<div class="gridDay" id="12/31" onclick="openModal('12/31')">31</div>
+			</div>
+		</div>
+		
+		<div class="modal" id="moodModal">
+			<div class="modalInfo" id="modalInfo">
+				<div class="reset" onclick="defaultColorBox('gray')">&#10226 </div>
+				<div class="close" onclick="closeModal()">&#x2715 </div>
+				
+				<h1 id="modalHeader"></h1>
+				<div class="mood" id="happy" onclick="defaultColorBox('#00bf2d')"><p id="moodDescription">Happy</p></div>
+				<div class="mood" id="sad" onclick="defaultColorBox('blue')"><p id="moodDescription">Sad</p></div>
+				<div class="mood" id="angry" onclick="defaultColorBox('red')"><p id="moodDescription">Angry</p></div>
+				<div class="mood" id="excited" onclick="defaultColorBox('#eacf2a')"><p id="moodDescription">Excited</p></div>
+				<div class="mood" id="love" onclick="defaultColorBox('#FF69B4')"><p id="moodDescription">Love</p></div>
+				<div class="mood" id="add" onclick="addMood()"><p id="moodDescription">Add</p></div>
+				<div class="mood" id="delete" onclick="deleteMood()"><p id="moodDescription">Delete</p></div>
+				
+				<form id="customMoodForm">
+					<br>
+					<label for="moodName">Mood name:</label>
+					<input type="text" id="moodName" name="moodName" required="required">
+					<label for="moodHex">Mood hex:</label>
+					<input type="color" id="moodHex" name="moodHex">
+					<input type="button" value="Submit" onclick="addColor(moodName.value, moodHex.value)">
+				</form> 
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			document.getElementById('inputfile').addEventListener('change', function() {
+				var fr=new FileReader();
+				fr.onload=function(){
+					const stuff = fr.result;
+					const moodInfo = stuff.split('\n')[0];
+					
+					clearMoods();
+					for(let i = 0; i < moodInfo.split(".").length; i++){
+						const finalMoods = moodInfo.split('.')[i];
+
+						
+						//Gets the color
+						if(finalMoods.split(':')[0].length != 1 && finalMoods.split(':')[1] != undefined){
+							let color = finalMoods.split(':')[0];
+							let id = finalMoods.split(':')[1];
+							
+							loadColor(id, color);
+						}
+						
+						
+					}
+					
+					colorBox(stuff.split('\n')[1], '1/1');
+					colorBox(stuff.split('\n')[2], '1/2');
+					colorBox(stuff.split('\n')[3], '1/3');
+					colorBox(stuff.split('\n')[4], '1/4');
+					colorBox(stuff.split('\n')[5], '1/5');
+					colorBox(stuff.split('\n')[6], '1/6');
+					colorBox(stuff.split('\n')[7], '1/7');
+					colorBox(stuff.split('\n')[8], '1/8');
+					colorBox(stuff.split('\n')[9], '1/9');
+					colorBox(stuff.split('\n')[10], '1/10');
+					colorBox(stuff.split('\n')[11], '1/11');
+					colorBox(stuff.split('\n')[12], '1/12');
+					colorBox(stuff.split('\n')[13], '1/13');
+					colorBox(stuff.split('\n')[14], '1/14');
+					colorBox(stuff.split('\n')[15], '1/15');
+					colorBox(stuff.split('\n')[16], '1/16');
+					colorBox(stuff.split('\n')[17], '1/17');
+					colorBox(stuff.split('\n')[18], '1/18');
+					colorBox(stuff.split('\n')[19], '1/19');
+					colorBox(stuff.split('\n')[20], '1/20');
+					colorBox(stuff.split('\n')[21], '1/21');
+					colorBox(stuff.split('\n')[22], '1/22');
+					colorBox(stuff.split('\n')[23], '1/23');
+					colorBox(stuff.split('\n')[24], '1/24');
+					colorBox(stuff.split('\n')[25], '1/25');
+					colorBox(stuff.split('\n')[26], '1/26');
+					colorBox(stuff.split('\n')[27], '1/27');
+					colorBox(stuff.split('\n')[28], '1/28');
+					colorBox(stuff.split('\n')[29], '1/29');
+					colorBox(stuff.split('\n')[30], '1/30');
+					colorBox(stuff.split('\n')[31], '1/31');
+					colorBox(stuff.split('\n')[32], '2/1');
+					colorBox(stuff.split('\n')[33], '2/2');
+					colorBox(stuff.split('\n')[34], '2/3');
+					colorBox(stuff.split('\n')[35], '2/4');
+					colorBox(stuff.split('\n')[36], '2/5');
+					colorBox(stuff.split('\n')[37], '2/6');
+					colorBox(stuff.split('\n')[38], '2/7');
+					colorBox(stuff.split('\n')[39], '2/8');
+					colorBox(stuff.split('\n')[40], '2/9');
+					colorBox(stuff.split('\n')[41], '2/10');
+					colorBox(stuff.split('\n')[42], '2/11');
+					colorBox(stuff.split('\n')[43], '2/12');
+					colorBox(stuff.split('\n')[44], '2/13');
+					colorBox(stuff.split('\n')[45], '2/14');
+					colorBox(stuff.split('\n')[46], '2/15');
+					colorBox(stuff.split('\n')[47], '2/16');
+					colorBox(stuff.split('\n')[48], '2/17');
+					colorBox(stuff.split('\n')[49], '2/18');
+					colorBox(stuff.split('\n')[50], '2/19');
+					colorBox(stuff.split('\n')[51], '2/20');
+					colorBox(stuff.split('\n')[52], '2/21');
+					colorBox(stuff.split('\n')[53], '2/22');
+					colorBox(stuff.split('\n')[54], '2/23');
+					colorBox(stuff.split('\n')[55], '2/24');
+					colorBox(stuff.split('\n')[56], '2/25');
+					colorBox(stuff.split('\n')[57], '2/26');
+					colorBox(stuff.split('\n')[58], '2/27');
+					colorBox(stuff.split('\n')[59], '2/28');
+					colorBox(stuff.split('\n')[60], '2/29');
+					colorBox(stuff.split('\n')[61], '3/1');
+					colorBox(stuff.split('\n')[62], '3/2');
+					colorBox(stuff.split('\n')[63], '3/3');
+					colorBox(stuff.split('\n')[64], '3/4');
+					colorBox(stuff.split('\n')[65], '3/5');
+					colorBox(stuff.split('\n')[66], '3/6');
+					colorBox(stuff.split('\n')[67], '3/7');
+					colorBox(stuff.split('\n')[68], '3/8');
+					colorBox(stuff.split('\n')[69], '3/9');
+					colorBox(stuff.split('\n')[70], '3/10');
+					colorBox(stuff.split('\n')[71], '3/11');
+					colorBox(stuff.split('\n')[72], '3/12');
+					colorBox(stuff.split('\n')[73], '3/13');
+					colorBox(stuff.split('\n')[74], '3/14');
+					colorBox(stuff.split('\n')[75], '3/15');
+					colorBox(stuff.split('\n')[76], '3/16');
+					colorBox(stuff.split('\n')[77], '3/17');
+					colorBox(stuff.split('\n')[78], '3/18');
+					colorBox(stuff.split('\n')[79], '3/19');
+					colorBox(stuff.split('\n')[80], '3/20');
+					colorBox(stuff.split('\n')[81], '3/21');
+					colorBox(stuff.split('\n')[82], '3/22');
+					colorBox(stuff.split('\n')[83], '3/23');
+					colorBox(stuff.split('\n')[84], '3/24');
+					colorBox(stuff.split('\n')[85], '3/25');
+					colorBox(stuff.split('\n')[86], '3/26');
+					colorBox(stuff.split('\n')[87], '3/27');
+					colorBox(stuff.split('\n')[88], '3/28');
+					colorBox(stuff.split('\n')[89], '3/29');
+					colorBox(stuff.split('\n')[90], '3/30');
+					colorBox(stuff.split('\n')[91], '3/31');
+					colorBox(stuff.split('\n')[92], '4/1');
+					colorBox(stuff.split('\n')[93], '4/2');
+					colorBox(stuff.split('\n')[94], '4/3');
+					colorBox(stuff.split('\n')[95], '4/4');
+					colorBox(stuff.split('\n')[96], '4/5');
+					colorBox(stuff.split('\n')[97], '4/6');
+					colorBox(stuff.split('\n')[98], '4/7');
+					colorBox(stuff.split('\n')[99], '4/8');
+					colorBox(stuff.split('\n')[100], '4/9');
+					colorBox(stuff.split('\n')[101], '4/10');
+					colorBox(stuff.split('\n')[102], '4/11');
+					colorBox(stuff.split('\n')[103], '4/12');
+					colorBox(stuff.split('\n')[104], '4/13');
+					colorBox(stuff.split('\n')[105], '4/14');
+					colorBox(stuff.split('\n')[106], '4/15');
+					colorBox(stuff.split('\n')[107], '4/16');
+					colorBox(stuff.split('\n')[108], '4/17');
+					colorBox(stuff.split('\n')[109], '4/18');
+					colorBox(stuff.split('\n')[110], '4/19');
+					colorBox(stuff.split('\n')[111], '4/20');
+					colorBox(stuff.split('\n')[112], '4/21');
+					colorBox(stuff.split('\n')[113], '4/22');
+					colorBox(stuff.split('\n')[114], '4/23');
+					colorBox(stuff.split('\n')[115], '4/24');
+					colorBox(stuff.split('\n')[116], '4/25');
+					colorBox(stuff.split('\n')[117], '4/26');
+					colorBox(stuff.split('\n')[118], '4/27');
+					colorBox(stuff.split('\n')[119], '4/28');
+					colorBox(stuff.split('\n')[120], '4/29');
+					colorBox(stuff.split('\n')[121], '4/30');
+					colorBox(stuff.split('\n')[122], '5/1');
+					colorBox(stuff.split('\n')[123], '5/2');
+					colorBox(stuff.split('\n')[124], '5/3');
+					colorBox(stuff.split('\n')[125], '5/4');
+					colorBox(stuff.split('\n')[126], '5/5');
+					colorBox(stuff.split('\n')[127], '5/6');
+					colorBox(stuff.split('\n')[128], '5/7');
+					colorBox(stuff.split('\n')[129], '5/8');
+					colorBox(stuff.split('\n')[130], '5/9');
+					colorBox(stuff.split('\n')[131], '5/10');
+					colorBox(stuff.split('\n')[132], '5/11');
+					colorBox(stuff.split('\n')[133], '5/12');
+					colorBox(stuff.split('\n')[134], '5/13');
+					colorBox(stuff.split('\n')[135], '5/14');
+					colorBox(stuff.split('\n')[136], '5/15');
+					colorBox(stuff.split('\n')[137], '5/16');
+					colorBox(stuff.split('\n')[138], '5/17');
+					colorBox(stuff.split('\n')[139], '5/18');
+					colorBox(stuff.split('\n')[140], '5/19');
+					colorBox(stuff.split('\n')[141], '5/20');
+					colorBox(stuff.split('\n')[142], '5/21');
+					colorBox(stuff.split('\n')[143], '5/22');
+					colorBox(stuff.split('\n')[144], '5/23');
+					colorBox(stuff.split('\n')[145], '5/24');
+					colorBox(stuff.split('\n')[146], '5/25');
+					colorBox(stuff.split('\n')[147], '5/26');
+					colorBox(stuff.split('\n')[148], '5/27');
+					colorBox(stuff.split('\n')[149], '5/28');
+					colorBox(stuff.split('\n')[150], '5/29');
+					colorBox(stuff.split('\n')[151], '5/30');
+					colorBox(stuff.split('\n')[152], '5/31');
+					colorBox(stuff.split('\n')[153], '6/1');
+					colorBox(stuff.split('\n')[154], '6/2');
+					colorBox(stuff.split('\n')[155], '6/3');
+					colorBox(stuff.split('\n')[156], '6/4');
+					colorBox(stuff.split('\n')[157], '6/5');
+					colorBox(stuff.split('\n')[158], '6/6');
+					colorBox(stuff.split('\n')[159], '6/7');
+					colorBox(stuff.split('\n')[160], '6/8');
+					colorBox(stuff.split('\n')[161], '6/9');
+					colorBox(stuff.split('\n')[162], '6/10');
+					colorBox(stuff.split('\n')[163], '6/11');
+					colorBox(stuff.split('\n')[164], '6/12');
+					colorBox(stuff.split('\n')[165], '6/13');
+					colorBox(stuff.split('\n')[166], '6/14');
+					colorBox(stuff.split('\n')[167], '6/15');
+					colorBox(stuff.split('\n')[168], '6/16');
+					colorBox(stuff.split('\n')[169], '6/17');
+					colorBox(stuff.split('\n')[170], '6/18');
+					colorBox(stuff.split('\n')[171], '6/19');
+					colorBox(stuff.split('\n')[172], '6/20');
+					colorBox(stuff.split('\n')[173], '6/21');
+					colorBox(stuff.split('\n')[174], '6/22');
+					colorBox(stuff.split('\n')[175], '6/23');
+					colorBox(stuff.split('\n')[176], '6/24');
+					colorBox(stuff.split('\n')[177], '6/25');
+					colorBox(stuff.split('\n')[178], '6/26');
+					colorBox(stuff.split('\n')[179], '6/27');
+					colorBox(stuff.split('\n')[180], '6/28');
+					colorBox(stuff.split('\n')[181], '6/29');
+					colorBox(stuff.split('\n')[182], '6/30');
+					colorBox(stuff.split('\n')[183], '7/1');
+					colorBox(stuff.split('\n')[184], '7/2');
+					colorBox(stuff.split('\n')[185], '7/3');
+					colorBox(stuff.split('\n')[186], '7/4');
+					colorBox(stuff.split('\n')[187], '7/5');
+					colorBox(stuff.split('\n')[188], '7/6');
+					colorBox(stuff.split('\n')[189], '7/7');
+					colorBox(stuff.split('\n')[190], '7/8');
+					colorBox(stuff.split('\n')[191], '7/9');
+					colorBox(stuff.split('\n')[192], '7/10');
+					colorBox(stuff.split('\n')[193], '7/11');
+					colorBox(stuff.split('\n')[194], '7/12');
+					colorBox(stuff.split('\n')[195], '7/13');
+					colorBox(stuff.split('\n')[196], '7/14');
+					colorBox(stuff.split('\n')[197], '7/15');
+					colorBox(stuff.split('\n')[198], '7/16');
+					colorBox(stuff.split('\n')[199], '7/17');
+					colorBox(stuff.split('\n')[200], '7/18');
+					colorBox(stuff.split('\n')[201], '7/19');
+					colorBox(stuff.split('\n')[202], '7/20');
+					colorBox(stuff.split('\n')[203], '7/21');
+					colorBox(stuff.split('\n')[204], '7/22');
+					colorBox(stuff.split('\n')[205], '7/23');
+					colorBox(stuff.split('\n')[206], '7/24');
+					colorBox(stuff.split('\n')[207], '7/25');
+					colorBox(stuff.split('\n')[208], '7/26');
+					colorBox(stuff.split('\n')[209], '7/27');
+					colorBox(stuff.split('\n')[210], '7/28');
+					colorBox(stuff.split('\n')[211], '7/29');
+					colorBox(stuff.split('\n')[212], '7/30');
+					colorBox(stuff.split('\n')[213], '7/31');
+					colorBox(stuff.split('\n')[214], '8/1');
+					colorBox(stuff.split('\n')[215], '8/2');
+					colorBox(stuff.split('\n')[216], '8/3');
+					colorBox(stuff.split('\n')[217], '8/4');
+					colorBox(stuff.split('\n')[218], '8/5');
+					colorBox(stuff.split('\n')[219], '8/6');
+					colorBox(stuff.split('\n')[220], '8/7');
+					colorBox(stuff.split('\n')[221], '8/8');
+					colorBox(stuff.split('\n')[222], '8/9');
+					colorBox(stuff.split('\n')[223], '8/10');
+					colorBox(stuff.split('\n')[224], '8/11');
+					colorBox(stuff.split('\n')[225], '8/12');
+					colorBox(stuff.split('\n')[226], '8/13');
+					colorBox(stuff.split('\n')[227], '8/14');
+					colorBox(stuff.split('\n')[228], '8/15');
+					colorBox(stuff.split('\n')[229], '8/16');
+					colorBox(stuff.split('\n')[230], '8/17');
+					colorBox(stuff.split('\n')[231], '8/18');
+					colorBox(stuff.split('\n')[232], '8/19');
+					colorBox(stuff.split('\n')[233], '8/20');
+					colorBox(stuff.split('\n')[234], '8/21');
+					colorBox(stuff.split('\n')[235], '8/22');
+					colorBox(stuff.split('\n')[236], '8/23');
+					colorBox(stuff.split('\n')[237], '8/24');
+					colorBox(stuff.split('\n')[238], '8/25');
+					colorBox(stuff.split('\n')[239], '8/26');
+					colorBox(stuff.split('\n')[240], '8/27');
+					colorBox(stuff.split('\n')[241], '8/28');
+					colorBox(stuff.split('\n')[242], '8/29');
+					colorBox(stuff.split('\n')[243], '8/30');
+					colorBox(stuff.split('\n')[244], '8/31');
+					colorBox(stuff.split('\n')[245], '9/1');
+					colorBox(stuff.split('\n')[246], '9/2');
+					colorBox(stuff.split('\n')[247], '9/3');
+					colorBox(stuff.split('\n')[248], '9/4');
+					colorBox(stuff.split('\n')[249], '9/5');
+					colorBox(stuff.split('\n')[250], '9/6');
+					colorBox(stuff.split('\n')[251], '9/7');
+					colorBox(stuff.split('\n')[252], '9/8');
+					colorBox(stuff.split('\n')[253], '9/9');
+					colorBox(stuff.split('\n')[254], '9/10');
+					colorBox(stuff.split('\n')[255], '9/11');
+					colorBox(stuff.split('\n')[256], '9/12');
+					colorBox(stuff.split('\n')[257], '9/13');
+					colorBox(stuff.split('\n')[258], '9/14');
+					colorBox(stuff.split('\n')[259], '9/15');
+					colorBox(stuff.split('\n')[260], '9/16');
+					colorBox(stuff.split('\n')[261], '9/17');
+					colorBox(stuff.split('\n')[262], '9/18');
+					colorBox(stuff.split('\n')[263], '9/19');
+					colorBox(stuff.split('\n')[264], '9/20');
+					colorBox(stuff.split('\n')[265], '9/21');
+					colorBox(stuff.split('\n')[266], '9/22');
+					colorBox(stuff.split('\n')[267], '9/23');
+					colorBox(stuff.split('\n')[268], '9/24');
+					colorBox(stuff.split('\n')[269], '9/25');
+					colorBox(stuff.split('\n')[270], '9/26');
+					colorBox(stuff.split('\n')[271], '9/27');
+					colorBox(stuff.split('\n')[272], '9/28');
+					colorBox(stuff.split('\n')[273], '9/29');
+					colorBox(stuff.split('\n')[274], '9/30');
+					colorBox(stuff.split('\n')[275], '10/1');
+					colorBox(stuff.split('\n')[276], '10/2');
+					colorBox(stuff.split('\n')[277], '10/3');
+					colorBox(stuff.split('\n')[278], '10/4');
+					colorBox(stuff.split('\n')[279], '10/5');
+					colorBox(stuff.split('\n')[280], '10/6');
+					colorBox(stuff.split('\n')[281], '10/7');
+					colorBox(stuff.split('\n')[282], '10/8');
+					colorBox(stuff.split('\n')[283], '10/9');
+					colorBox(stuff.split('\n')[284], '10/10');
+					colorBox(stuff.split('\n')[285], '10/11');
+					colorBox(stuff.split('\n')[286], '10/12');
+					colorBox(stuff.split('\n')[287], '10/13');
+					colorBox(stuff.split('\n')[288], '10/14');
+					colorBox(stuff.split('\n')[289], '10/15');
+					colorBox(stuff.split('\n')[290], '10/16');
+					colorBox(stuff.split('\n')[291], '10/17');
+					colorBox(stuff.split('\n')[292], '10/18');
+					colorBox(stuff.split('\n')[293], '10/19');
+					colorBox(stuff.split('\n')[294], '10/20');
+					colorBox(stuff.split('\n')[295], '10/21');
+					colorBox(stuff.split('\n')[296], '10/22');
+					colorBox(stuff.split('\n')[297], '10/23');
+					colorBox(stuff.split('\n')[298], '10/24');
+					colorBox(stuff.split('\n')[299], '10/25');
+					colorBox(stuff.split('\n')[300], '10/26');
+					colorBox(stuff.split('\n')[301], '10/27');
+					colorBox(stuff.split('\n')[302], '10/28');
+					colorBox(stuff.split('\n')[303], '10/29');
+					colorBox(stuff.split('\n')[304], '10/30');
+					colorBox(stuff.split('\n')[305], '10/31');
+					colorBox(stuff.split('\n')[306], '11/1');
+					colorBox(stuff.split('\n')[307], '11/2');
+					colorBox(stuff.split('\n')[308], '11/3');
+					colorBox(stuff.split('\n')[309], '11/4');
+					colorBox(stuff.split('\n')[310], '11/5');
+					colorBox(stuff.split('\n')[311], '11/6');
+					colorBox(stuff.split('\n')[312], '11/7');
+					colorBox(stuff.split('\n')[313], '11/8');
+					colorBox(stuff.split('\n')[314], '11/9');
+					colorBox(stuff.split('\n')[315], '11/10');
+					colorBox(stuff.split('\n')[316], '11/11');
+					colorBox(stuff.split('\n')[317], '11/12');
+					colorBox(stuff.split('\n')[318], '11/13');
+					colorBox(stuff.split('\n')[319], '11/14');
+					colorBox(stuff.split('\n')[320], '11/15');
+					colorBox(stuff.split('\n')[321], '11/16');
+					colorBox(stuff.split('\n')[322], '11/17');
+					colorBox(stuff.split('\n')[323], '11/18');
+					colorBox(stuff.split('\n')[324], '11/19');
+					colorBox(stuff.split('\n')[325], '11/20');
+					colorBox(stuff.split('\n')[326], '11/21');
+					colorBox(stuff.split('\n')[327], '11/22');
+					colorBox(stuff.split('\n')[328], '11/23');
+					colorBox(stuff.split('\n')[329], '11/24');
+					colorBox(stuff.split('\n')[330], '11/25');
+					colorBox(stuff.split('\n')[331], '11/26');
+					colorBox(stuff.split('\n')[332], '11/27');
+					colorBox(stuff.split('\n')[333], '11/28');
+					colorBox(stuff.split('\n')[334], '11/29');
+					colorBox(stuff.split('\n')[335], '11/30');
+					colorBox(stuff.split('\n')[336], '12/1');
+					colorBox(stuff.split('\n')[337], '12/2');
+					colorBox(stuff.split('\n')[338], '12/3');
+					colorBox(stuff.split('\n')[339], '12/4');
+					colorBox(stuff.split('\n')[340], '12/5');
+					colorBox(stuff.split('\n')[341], '12/6');
+					colorBox(stuff.split('\n')[342], '12/7');
+					colorBox(stuff.split('\n')[343], '12/8');
+					colorBox(stuff.split('\n')[344], '12/9');
+					colorBox(stuff.split('\n')[345], '12/10');
+					colorBox(stuff.split('\n')[346], '12/11');
+					colorBox(stuff.split('\n')[347], '12/12');
+					colorBox(stuff.split('\n')[348], '12/13');
+					colorBox(stuff.split('\n')[349], '12/14');
+					colorBox(stuff.split('\n')[350], '12/15');
+					colorBox(stuff.split('\n')[351], '12/16');
+					colorBox(stuff.split('\n')[352], '12/17');
+					colorBox(stuff.split('\n')[353], '12/18');
+					colorBox(stuff.split('\n')[354], '12/19');
+					colorBox(stuff.split('\n')[355], '12/20');
+					colorBox(stuff.split('\n')[356], '12/21');
+					colorBox(stuff.split('\n')[357], '12/22');
+					colorBox(stuff.split('\n')[358], '12/23');
+					colorBox(stuff.split('\n')[359], '12/24');
+					colorBox(stuff.split('\n')[360], '12/25');
+					colorBox(stuff.split('\n')[361], '12/26');
+					colorBox(stuff.split('\n')[362], '12/27');
+					colorBox(stuff.split('\n')[363], '12/28');
+					colorBox(stuff.split('\n')[364], '12/29');
+					colorBox(stuff.split('\n')[365], '12/30');
+					colorBox(stuff.split('\n')[366], '12/31');
+
+				}
+				
+				fr.readAsText(this.files[0]);
+			})
+		</script>
+		
+		
+		<script>
+			const d = new Date();
+			let year = d.getFullYear();
+			if(year % 4 != 0){
+				document.getElementById("2/29").style.display = "none";
+			}	
+			
+		</script>
+	</body>
+</html>
